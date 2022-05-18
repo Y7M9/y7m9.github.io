@@ -9,10 +9,75 @@
     <title>A1r</title>
 </head>
 <style>
+        *{
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
     .text1{
             text-align: center;
             color: aliceblue;
+            text-shadow: 1px 1px 0 #000, 1.5px 1.5px 0 #000;
         }
+        
+        a{
+    position: relative;
+    background: #fff;
+    color:  rgba(0, 0, 0, 0.749);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5em;
+letter-spacing: 0.1em;
+font-weight: 400;
+padding: px 0px;
+transition: 0.5s;
+}
+      a:hover{
+          letter-spacing: 0.25em;
+
+
+      }
+
+      a span{
+          position: relative;
+          z-index: 1;
+      }
+      a i{
+          position: absolute;
+          inset: 0;
+display: block;
+      }
+      a i::before{
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 80%;
+         width: 10px;
+         height: 4px;
+         background: #27282c;
+         transform: translateX(-50%) skewX(325deg);
+         transition: 0.5s;
+      }
+      a:hover i::before{
+          width:20px;
+          left: 20%;
+      }
+
+      a i::after{
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 20%;
+         width: 10px;
+         height: 4px;
+         background: #27282c;
+         transform: translateX(-50%) skewX(325deg);
+         transition: 0.5s;
+      }
+      a:hover i::after{
+          width:20px;
+          left: 80%;
+      }
     .text{
         text-align: center;
         font-size: 15px;
@@ -21,13 +86,11 @@
     .img1{
             text-align: center;
             height: 190px;
-            width: 350;  
+            width: 350px;  
             margin: auto;
             padding: 0px;
             border-radius: 40px;
             object-fit: cover;
-    img{
-        
     }
 </style>
 <body>
@@ -40,11 +103,10 @@
         <h4 class="text1">
             <a href="https://pan.baidu.com/s/1STpNDG2JVZhjuQLo9_KFUQ " target="_blank" class="btn">DOWNLOAD</a>
       </h4>
-    <h4 class="text1">
-        <a href="https://www.douyin.com/video/7084224075123477767" target="_blank" style="color: rgba(0, 0, 0, 0.749);"><h1>在抖音看此视频</h1></a>
-  </h4>
-    
+      <h4 class="text1">
+        <a href="https://www.douyin.com/video/7084224075123477767"><span>在抖音看此视频</span><i></i></a>
 </p>
+
 <p class="zfb"><img src="images/zfb.PNG" alt="zfb" class="zfb"></p>
 <h2 class="text">你的打款就是我的全部动力</h2>
 <h2 class="text">Your payment is all my motivation</h2>
