@@ -1,83 +1,92 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
-body{
+
+body {
     margin: 0px;
-    padding: 0px;   
+    padding: 0px;
     font-family: "montserrat";
     background-color: white;
 }
 
-.move{
-    text-align: center;
-    transform: translate(-50%, -50);    
+.move {
+    text-align: ;
+    transform: translate(-50%, -50);
     width: 100%;
-    font-size: 40px;
+    font-size: 50px;
+
 }
-.move{
-    text-transform: uppercase;
+
+.move {
     display: block;
+    padding: 8px;
 }
-.text3{
+
+.text3 {
     color: black;
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 4px;
     margin-bottom: 20px;
-    
+
     position: relative;
     animation: text 3s 1;
     color: #black;
 }
-.text4{
+
+.text4 {
     font-size: 30px;
     color: black;
 
 }
-@keyframes text{
-    0%{
+
+@keyframes text {
+    0% {
         letter-spacing: 18;
         margin-bottom: 40px;
     }
-    30%{
+
+    30% {
         letter-spacing: 13px;
         margin-bottom: -40px;
     }
-    85%{
+
+    85% {
         letter-spacing: 5px;
         margin-bottom: -40px;
     }
 }
-img{
+
+img {
     transition: all 0.5s ease-in-out;
 }
 
-img:hover{
+img:hover {
     filter: blur(4px);
     width: 500px;
 }
-.click{
+
+.click {
     font-size: 30px;
-            color: #left;
+    color: #left;
 }
 
-ul
-{
+ul {
     position: relative;
-    
+
     margin: 0 30%;
     padding: 0;
     display: flex;
 }
-ul li
-{
+
+ul li {
     list-style: none;
-    
+
 }
-ul li a
-{
+
+ul li a {
     position: relative;
     display: block;
     padding: 10px 20px;
@@ -88,8 +97,8 @@ ul li a
     font-weight: bold;
     transition: .5s;
 }
-ul li a:before
-{
+
+ul li a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -101,24 +110,24 @@ ul li a:before
     transform: scaleY(2);
     opacity: 0;
     transition: .5s;
-    
+
 }
-ul li a:hover:before
-{
+
+ul li a:hover:before {
     transform: scaleY(1);
     opacity: 1;
 }
 
-.container
-{
+.container {
     position: relative;
     width: 800px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 40px; 
+    padding: 10px 40px;
 }
-.padding{
+
+.padding {
     position: relative;
     width: 0px 100px;
     justify-content: center;
@@ -126,7 +135,7 @@ ul li a:hover:before
     padding: 10px 30px;
 }
 
-.bili{
+.bili {
     position: absolute;
     top: 20px;
     left: 1200px;
@@ -141,8 +150,7 @@ ul li a:hover:before
     box-shadow: 2px 2px 2px rgb(119, 116, 116);
 }
 
-.btn{
+.btn {
     width: 20px;
-    height: 20px;   
+    height: 20px;
 }
-
