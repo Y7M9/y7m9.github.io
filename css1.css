@@ -1,0 +1,148 @@
+.container {
+    padding: px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* 设置按钮样式 */
+.button {
+    font-family: fantasy;
+    display: inline-block;
+    font-size: 40px;
+    padding: 20px 40px;
+    margin: 50px;
+    border-radius: 12%;
+    line-height: 75px;
+    box-shadow: 6px 6px 15px #000000;
+    transition: all 0.8s;
+    text-decoration: none;
+
+}
+
+/* 设置粉色按钮样式 */
+.button-pink {
+    background:
+        linear-gradient(0deg, rgba(64, 93, 230, 1), transparent 100%),
+        linear-gradient(120deg, rgba(225, 48, 108, 1), transparent 100%),
+        linear-gradient(240deg, rgb(252, 175, 69, 1), transparent 100%);
+    background-size: 100% 100%;
+    animation: gradient 5s ease-in-out infinite;
+    color: white;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+    }
+
+    25% {
+        background-position: 0% 0%;
+        background-size: 200% 200%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+        background-size: 200% 200%;
+    }
+
+    75% {
+        background-position: 100% 0%;
+        background-size: 200% 200%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+    }
+
+}
+
+/* 设置红色按钮样式 */
+.button-red {
+    background:
+        linear-gradient(0deg, rgb(255, 30, 30), transparent 100%),
+        linear-gradient(120deg, rgb(255, 116, 116), transparent 100%),
+        linear-gradient(240deg, rgb(255, 137, 137), transparent 100%);
+    background-size: 100% 100%;
+    animation: gradient 5s ease-in-out infinite;
+    color: white;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 50%;
+        background-size: 200% 200%;
+    }
+
+    25% {
+        background-position: 0% 0%;
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+        background-size: 200% 200%;
+    }
+
+    75% {
+        background-position: 100% 0%;
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+    }
+
+}
+
+
+/* 设置黑色按钮样式 */
+.button-black {
+    background:
+        linear-gradient(0deg, rgb(0, 0, 0), transparent 100%),
+        linear-gradient(120deg, rgb(41, 41, 41), transparent 100%),
+        linear-gradient(240deg, rgb(0, 0, 0), transparent 100%);
+    background-size: 100% 100%;
+    animation: gradient 5s ease-in-out infinite;
+    color: white;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+    }
+
+    25% {
+        background-position: 0% 0%;
+        background-size: 200% 200%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+        background-size: 200% 200%;
+    }
+
+    75% {
+        background-position: 100% 0%;
+        background-size: 200% 200%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+    }
+
+}
+
+
+/* 设置鼠标移动到按钮上的动画效果 */
+.button:hover {
+    transform: scale(1.5);
+}
